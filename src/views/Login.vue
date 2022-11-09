@@ -9,7 +9,7 @@
                 <v-row>
                   <v-col cols="12" md="6">
                     <v-card-text class="mt-12">
-                      <h4 class="text-center">Login in to Your Account</h4>
+                      <h2 class="text-center">Login in to Your Account</h2>
                       <h6 class="text-center grey--text">
                         Log in to your account so you can continue builiding
                         <br />and editing your onboarding flows
@@ -116,7 +116,7 @@
 
                   <v-col cols="12" md="6">
                     <v-card-text class="mt-12">
-                      <h4 class="text-center">Sign Up for an Account</h4>
+                      <h2 class="text-center">Sign Up for an Account</h2>
                       <h6 class="text-center grey--text">
                         Let's get you all set up so you can start creatin your
                         <br />
