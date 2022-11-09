@@ -1,6 +1,6 @@
 <template>
   <v-app>
-            <v-navigation-drawer app :mini-variant.sync="mini">
+    <v-navigation-drawer app :mini-variant.sync="mini">
       <v-list>
         <v-list-item class="px-2">
           <v-list-item-avatar>
@@ -23,17 +23,22 @@
       <v-divider></v-divider>
 
       <v-list nav dense>
-        <v-list-item link>
+        <v-list-item link to="/">
           <v-list-item-icon>
             <v-icon>mdi-home</v-icon>
           </v-list-item-icon>
 
-          <v-list-item-title>
-            <router-link to="/">Home</router-link>
-          </v-list-item-title>
+          <v-list-item-title> Home </v-list-item-title>
+        </v-list-item>
+        <v-list-item link to="/about">
+          <v-list-item-icon>
+            <v-icon>mdi-home</v-icon>
+          </v-list-item-icon>
+
+          <v-list-item-title> About </v-list-item-title>
         </v-list-item>
 
-        <v-list-group :value="true" prepend-icon="mdi-account-circle">
+        <!-- <v-list-group  prepend-icon="mdi-account-circle">
           <template v-slot:activator>
             <v-list-item-title>Users</v-list-item-title>
           </template>
@@ -45,10 +50,8 @@
               </v-list-item-content>
             </template>
 
-            <v-list-item link>
-              <v-list-item-title
-                ><router-link to="/about">Manager</router-link>
-              </v-list-item-title>
+            <v-list-item link to="/about">
+              <v-list-item-title>Manager </v-list-item-title>
 
               <v-list-item-icon>
                 <v-icon>mdi-account-multiple-outline</v-icon>
@@ -56,7 +59,7 @@
             </v-list-item>
           </v-list-group>
 
-          <!-- <v-list-group no-action sub-group>
+         <v-list-group no-action sub-group>
             <template v-slot:activator>
               <v-list-item-content>
                 <v-list-item-title>Actions</v-list-item-title>
@@ -70,8 +73,8 @@
                 <v-icon v-text="icon"></v-icon>
               </v-list-item-icon>
             </v-list-item>
-          </v-list-group> -->
-        </v-list-group>
+          </v-list-group> 
+        </v-list-group> -->
       </v-list>
     </v-navigation-drawer>
 
@@ -85,9 +88,9 @@
           >mdi-theme-light-dark</v-icon
         >
       </v-btn>
-      
+
       <v-badge content="1" value="1" color="red" overlap>
-        <v-icon > mdi-bell </v-icon>
+        <v-icon> mdi-bell </v-icon>
       </v-badge>
       <v-divider class="mx-4" vertical></v-divider>
 
