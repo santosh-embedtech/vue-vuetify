@@ -13,11 +13,11 @@ const routes = [
     path: '/',
     name: 'home',
     component: HomeView,
-    meta: {
-      middleware: [
-        auth
-      ]
-    }
+    // meta: {
+    //   middleware: [
+    //     auth
+    //   ]
+    // }
   },
   {
     path: '/about',
