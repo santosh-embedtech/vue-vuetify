@@ -1,85 +1,7 @@
 <template>
   <v-app>
-    <v-navigation-drawer app :mini-variant.sync="mini">
-      <v-list>
-        <v-list-item class="px-2">
-          <v-list-item-avatar>
-            <v-img
-              src="https://randomuser.me/api/portraits/women/85.jpg"
-            ></v-img>
-          </v-list-item-avatar>
-        </v-list-item>
-
-        <v-list-item link>
-          <v-list-item-content>
-            <v-list-item-title class="text-h6">
-              Sandra Adams
-            </v-list-item-title>
-            <v-list-item-subtitle>sandra_a88@gmail.com</v-list-item-subtitle>
-          </v-list-item-content>
-        </v-list-item>
-      </v-list>
-
-      <v-divider></v-divider>
-
-      <v-list nav dense>
-        <v-list-item link to="/">
-          <v-list-item-icon>
-            <v-icon>mdi-home</v-icon>
-          </v-list-item-icon>
-
-          <v-list-item-title> Home </v-list-item-title>
-        </v-list-item>
-        <v-list-item link to="/about">
-          <v-list-item-icon>
-            <v-icon>mdi-home</v-icon>
-          </v-list-item-icon>
-
-          <v-list-item-title> About </v-list-item-title>
-        </v-list-item>
-
-        <!-- <v-list-group  prepend-icon="mdi-account-circle">
-          <template v-slot:activator>
-            <v-list-item-title>Users</v-list-item-title>
-          </template>
-
-          <v-list-group :value="true" no-action sub-group>
-            <template v-slot:activator>
-              <v-list-item-content>
-                <v-list-item-title>Admin</v-list-item-title>
-              </v-list-item-content>
-            </template>
-
-            <v-list-item link to="/about">
-              <v-list-item-title>Manager </v-list-item-title>
-
-              <v-list-item-icon>
-                <v-icon>mdi-account-multiple-outline</v-icon>
-              </v-list-item-icon>
-            </v-list-item>
-          </v-list-group>
-
-         <v-list-group no-action sub-group>
-            <template v-slot:activator>
-              <v-list-item-content>
-                <v-list-item-title>Actions</v-list-item-title>
-              </v-list-item-content>
-            </template>
-
-            <v-list-item v-for="([title, icon], i) in cruds" :key="i" link>
-              <v-list-item-title v-text="title"></v-list-item-title>
-
-              <v-list-item-icon>
-                <v-icon v-text="icon"></v-icon>
-              </v-list-item-icon>
-            </v-list-item>
-          </v-list-group> 
-        </v-list-group> -->
-      </v-list>
-    </v-navigation-drawer>
-
-    <v-app-bar app dense elevation="0">
-      <v-app-bar-nav-icon @click="mini = !mini"></v-app-bar-nav-icon>
+    <v-app-bar app  elevation="0">
+      <v-app-bar-nav-icon ></v-app-bar-nav-icon>
 
       <v-toolbar-title>Page title</v-toolbar-title>
       <v-spacer></v-spacer>
@@ -140,17 +62,7 @@ export default {
   name: "App",
 
   data: () => ({
-    mini: false,
-    // admins: [
-    //   ["Management", "mdi-account-multiple-outline"],
-    //   ["Settings", "mdi-cog-outline"],
-    // ],
-    // cruds: [
-    //   ["Create", "mdi-plus-outline"],
-    //   ["Read", "mdi-file-outline"],
-    //   ["Update", "mdi-update"],
-    //   ["Delete", "mdi-delete"],
-    // ],
+
   }),
 };
 </script>

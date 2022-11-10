@@ -221,10 +221,11 @@ import LoginLayout from '@/layouts/Login.vue'
 export default {
   data: () => ({
     step: 1,
+    form:{
+      email:'',
+      password:''
+    }
   }),
-  props: {
-    source: String,
-  },
   created(){
     this.$emit('update:layout', LoginLayout)
   }
